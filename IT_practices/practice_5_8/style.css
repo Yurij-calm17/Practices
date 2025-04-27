@@ -1,0 +1,55 @@
+/* Базові стилі залишаються */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Темна тема */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode header {
+    background-color: #1f1f1f;
+  }
+  
+  .toggle-container, .theme-toggle-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .toggle-btn, .theme-toggle-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn.active {
+    background-color: #ffcc00;
+    color: #000;
+  }
+  
+  .chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

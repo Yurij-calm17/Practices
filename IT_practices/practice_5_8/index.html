@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інтерактивний Дашборд</title>
+
+  <!-- Підключення CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Підключення Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Підключення плагіна для підписів на графіку -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+  <!-- Підключення скрипта -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Дашборд: Перемикання режимів</h1>
+        <p>Оберіть: Спрощений чи Детальний режим</p>
+      </header>
+      
+      <div class="theme-toggle-container">
+        <button id="themeToggleBtn" class="theme-toggle-btn">🌙 Темна Тема</button>
+      </div>
+      
+      <div class="toggle-container">
+        <button id="simpleBtn" class="toggle-btn">Спрощений</button>
+        <button id="detailedBtn" class="toggle-btn">Детальний</button>
+      </div>
+      
+      <div class="chart-container">
+        <canvas id="myChart"></canvas>
+      </div>      
+</body>
+</html>
