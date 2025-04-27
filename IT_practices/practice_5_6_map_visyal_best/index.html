@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інтерактивний Дашборд</title>
+
+  <!-- Підключення стилів -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Підключення Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Підключення Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Підключення скрипта -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Інтерактивний Дашборд</h1>
+    <p>Графік відвідувань та карта з інтеграцією</p>
+  </header>
+
+  <div class="filters">
+    <label for="monthFilter">Фільтрувати за місяцем:</label>
+    <select id="monthFilter">
+      <option value="all">Усі місяці</option>
+      <option value="Січень">Січень</option>
+      <option value="Лютий">Лютий</option>
+      <option value="Березень">Березень</option>
+      <option value="Квітень">Квітень</option>
+      <option value="Травень">Травень</option>
+    </select>
+  </div>
+
+  <div class="dashboard">
+    <div class="chart-block">
+      <canvas id="visitsChart"></canvas>
+    </div>
+    <div id="map"></div>
+  </div>
+
+</body>
+</html>
